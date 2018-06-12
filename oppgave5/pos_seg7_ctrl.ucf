@@ -1,0 +1,41 @@
+NET "a_n[0]" LOC = D14;
+NET "a_n[1]" LOC = G14;
+NET "a_n[2]" LOC = F14;
+NET "a_n[3]" LOC = E13;
+#NET "abcdefgdec_n[3]" LOC = R16;
+#NET "abcdefgdec_n[4]" LOC = P15;
+#NET "abcdefgdec_n[5]" LOC = N15;
+#NET "abcdefgdec_n[6]" LOC = G13;
+#NET "abcdefgdec_n[7]" LOC = E14;
+#NET "abcdefgdec_n[1]" LOC = N16;
+#NET "abcdefgdec_n[2]" LOC = F13;
+
+NET "abcdefgdec_n[0]" LOC = N16; #f14
+NET "abcdefgdec_n[1]" LOC = F13;
+NET "abcdefgdec_n[2]" LOC = R16;
+NET "abcdefgdec_n[3]" LOC = P15;
+NET "abcdefgdec_n[4]" LOC = N15;
+NET "abcdefgdec_n[5]" LOC = G13;
+NET "abcdefgdec_n[6]" LOC = E14;
+
+NET "sp[0]" LOC = F12;
+NET "sp[1]" LOC = G12;
+NET "sp[2]" LOC = H14;
+NET "sp[3]" LOC = H13;
+NET "sp[4]" LOC = J14;
+NET "sp[5]" LOC = J13;
+NET "sp[6]" LOC = K14;
+NET "sp[7]" LOC = K13;
+NET "force_ccw" LOC = M13;
+NET "force_cw" LOC = M14;
+NET "sync_rst" LOC = L13;
+NET "refclk" LOC = T9;
+NET "arst" LOC = L14;
+NET "motor_cw"       LOC = "A7"  ; 
+NET "motor_ccw"      LOC = "A9"  ; 
+NET "a"              LOC = "A8"  ; 
+NET "b"              LOC = "A10" ; 
+
+NET "refclk" TNM_NET = refclk;
+TIMESPEC TS_refclk = PERIOD "refclk" 20 ns HIGH 50%;
+TIMESPEC "TS_domain_mclk_div" = PERIOD "mclk_div_grp" 2560.000000 ns HIGH 50.000000 %;
